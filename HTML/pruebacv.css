@@ -1,0 +1,164 @@
+/*es la fuente pixeleada de google font: font-family: 'VT323', monospace; */ 
+h1{
+    font-family: 'VT323', monospace;
+    font-size: 45px;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(65, 170, 240);
+    background-image:url("imagenes/cropped-1920-1080-463445.jpg");
+    background-attachment: fixed;
+   
+}
+a{
+    text-decoration: none;
+    color:rgb(220, 20, 120)
+   
+
+}
+a:hover{
+    text-decoration: none;
+    color:red
+    
+    
+}
+ul{
+    text-decoration: none;
+    cursor: pointer;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;      
+
+}
+
+ol{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    color: rgb(220, 20, 120);
+    
+
+}
+p{
+    font-size: 17px;
+    font-weight: 550;
+    color: rgb(220, 20, 120);
+    /* -webkit-text-stroke: 0.5px black; es para poner trazos a las letras*/
+    background-color: rgba(0, 0, 0, 0.432);
+    width: fit-content;
+    border-radius: 20px;
+}
+
+h2{
+    font-size: 25px;
+}
+.minombre{
+    color: aquamarine;
+    
+}
+    
+audio{
+    background-color: rgba(220, 20, 60, 0.89);
+    padding: 0px 5px 0px 5px;
+    border-radius: 25px;
+}
+li{
+    font-size: 17px;
+    font-weight: 550;
+    background-color: rgba(0, 0, 0, 0.432);
+    width: fit-content;
+    padding-right: 5px;
+    border-radius: 10px;
+    
+}
+.nombrecancion{
+    color: rgb(65, 170, 240);
+    background-color:rgba(0, 0, 0, 0.432);
+    width: fit-content;
+    padding-right: 5px;
+    border-radius: 10px;
+}
+
+img{
+    border-radius: 250px;
+    box-shadow: 0px -10px 10px crimson ;
+    transition: 0.5s ease;
+}
+.araña{
+    font-size: 45px;
+    -webkit-text-stroke: 0.7px black;
+    padding: 10px;
+    color:rgb(194, 0, 0);
+    background: rgb(0,91,255);
+    background: radial-gradient(circle, rgba(0,91,255,1) 30%, rgba(246,3,3,1) 90%);
+    border-radius: 50px;
+    transition: 1s ease;
+}
+
+.araña:hover{
+    color:black;
+    background: white;
+    transition: 1s ease;
+}
+
+img:hover{
+    box-shadow: 0px -10px 10px rgb(72, 72, 252) ;
+    transition: 0.5s ease;
+
+}
+
+
+/* parte de resolucion menor a 800px de ancho */
+
+@media screen and (max-width: 800px)
+{
+
+    img{
+        transform: scale(0.8);
+        margin-top: -40px;
+        
+    }
+
+    body{
+        /* text-align: center; */
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    p{
+        text-align: center;
+        padding: 5px;
+    }
+    .araña{
+        margin-top: 3%;
+    }
+
+    ul{
+        flex-direction: column;
+
+    }
+    
+    ol{
+        flex-direction:column;
+    
+    }
+    
+    h2{
+        font-size: 30px;
+    }
+       
+
+
+
+
+
+
+
+
+
+
+
+
+}
